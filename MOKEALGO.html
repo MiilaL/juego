@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <title>MOKEALGO</title>
+            <link rel="stylesheet" href="./style.css"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+            <section id = "selec_mascota">
+                    <h1 id="titulo" class="titulo-central">RATIXPON!!</h1>
+                    <h2 class="subtitulo">Elige tu mascota:</h2>
+                    <div id="contenedorTarjetas" class="listaOrganizada">
+                    </div>
+                
+                <button class="claseBotonMascota" id="boton-mascota">seleccionar</button> 
+            </section>
+
+            <section id="ver-mapa">
+                <h1 id="titulo-canvas" class="titulo-central-mapa">Ven a recorrer el mapa conmigo</h1>
+                <canvas id="mapa"></canvas>
+                <button class="boton-arriba" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⇧</button>
+                <div class="botones-movimiento">
+                    <button  onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⇦</button>
+                    <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">⇩</button>
+                    <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">⇨</button>
+                </div>
+            </section>
+
+
+            <section id ="seleccionar-ataque">
+                <h1 id="titulo" class="titulo-central">RATIXALGO!!</h1> 
+                <h2 class="subtitulo">Elige tu Atak</h2>
+
+                <div id="contenedorAtaques"></div>
+
+                <div id = "mensajes"> 
+                    <p id="resultado">¡Te deseo Suerte!</p>
+                    <section id = "reinicio">
+                        <button id="boton-reinicia">Intentalo de nuevo!</button>
+                    </section>
+                </div>
+
+            <div class="juego-en-proceso">
+                <div class="ataquesJugador">
+                    <p id="vidas-jugador" style="color: firebrick;">0</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                
+                <div class="ataquesEnemigo">
+                    <p id="vidas-enemigo" style="color: blueviolet;">0</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>    
+            </section>
+            <script src="./MOKEALGO.js"></script>
+        </body>
+    </html>
