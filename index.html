@@ -19,11 +19,16 @@
             <section id="ver-mapa">
                 <h1 id="titulo-canvas" class="titulo-central-mapa">Ven a recorrer el mapa conmigo</h1>
                 <canvas id="mapa"></canvas>
-                <button class="boton-arriba" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⇧</button>
+                <button class="boton-arriba" ontouchstart ontouchend onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⇧</button>
+                <button class="boton-arribacel"  ontouchend="detenerMovimiento()" ontouchstart="moverArriba()">⇧</button>
                 <div class="botones-movimiento">
-                    <button  onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⇦</button>
+                    <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⇦</button>
                     <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">⇩</button>
                     <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">⇨</button>
+
+                    <button ontouchend="detenerMovimiento()" ontouchstart="moverIzquierda()">⇦</button>
+                    <button ontouchend="detenerMovimiento()" ontouchstart="moverAbajo()">⇩</button>
+                    <button ontouchend="detenerMovimiento()" ontouchstart="moverDerecha()">⇨</button>
                 </div>
             </section>
 
