@@ -201,8 +201,7 @@ function seleccionarMascotaJugador () {
     }else {
         alert("selecciona uno")
         return
-    }
-    
+}
 sectionSeleccionarMascota.style.display ="none"
 extraerAtaques(mascotaDelJugador)
 
