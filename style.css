@@ -1,60 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-body{
+body {
     background-color: black;
 }
 
-.titulo-central{
+.titulo-central {
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-    "EDPT" 100,
-    "EHLT" 12;
+    font-variation-settings: "EDPT" 100, "EHLT" 12;
     font-size: 90px;
+    color: rgb(85, 38, 71);
+    text-decoration: underline;
+    text-decoration-color: #ffbb066b;
+    text-decoration-style: dotted;
+    margin: 0 5px;
 }
 
-.subtitulo{
+.subtitulo {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    margin: 0px;
+    margin: 0;
     color: rgb(209, 120, 85);
 }
 
-#selec_mascota{
+#selec_mascota {
     height: 600px;
     display: flex;
     flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.titulo-central{
-    color: rgb(85, 38, 71);
-    text-decoration:underline;
-    text-decoration-color:#ffbb066b;
-    text-decoration-style: dotted;
-    margin: 05px;
-}
-
-.listaOrganizada{
+.listaOrganizada {
     display: flex;
-    gap: 20px ;
+    gap: 20px;
 }
 
-label{
-    width:1px;
+label {
+    width: 1px;
     height: 100px;
     background-color: rgb(184, 233, 106);
     border-radius: 23px;
-    
 }
 
-.tarjeta_mokepon{
+.tarjeta_mokepon {
     width: 260px;
     height: 300px;
     background-color: rgba(247, 234, 142, 0.945);
@@ -67,14 +61,17 @@ label{
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 75px; color: rgb(252, 84, 18);
-    
+    font-size: 75px;
+    color: rgb(252, 84, 18);
 }
 
-.claseBotonMascota{
+.claseBotonMascota,
+#boton-reinicia,
+.boton-ataque,
+#ver-mapa button {
     width: 500px;
     height: 50px;
-    background-color:transparent;
+    background-color: transparent;
     border-radius: 60px;
     border-color: rgb(200, 65, 4);
     border-width: 6px;
@@ -86,161 +83,74 @@ label{
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 40px;
+    margin: 40px 0;
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-    "EDPT" 100,
-    "EHLT" 12;
+    font-variation-settings: "EDPT" 100, "EHLT" 12;
     font-size: 20;
 }
 
-.tarjeta_mokepon img{
+.tarjeta_mokepon img {
     width: 200px;
     border-radius: 20px;
-    
 }
 
-input{
+input {
     display: none;
 }
 
-input:checked + label{
+input:checked + label {
     background-color: #f1ad32;
 }
 
-
-div{
-    color: aliceblue;
-}
-
-#seleccionar-ataque{
-    align-items: center;
-    flex-direction: column;
-}
-
-.boton-ataque{
-    margin-right: 5px;
-    border-radius: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #e5c68f;
-    height: 90px;
-    width: 120px;
-    border-radius: 30px;
-    border-bottom-color: transparent;
-    color: rgb(0, 0, 0);
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    margin: 20px;
-    border-color: #f1ad32;
-    border-width: 10px;
-}
-
-#mensajes{
+#mensajes {
     padding: 20px;
     background: rgb(0, 0, 0);
     height: 130px;
     width: 400px;
     border-radius: 20px;
-    margin-top: 10px;
+    margin: 5px;
     font-family: "Jersey 10", sans-serif;
     color: white;
     font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px;
     flex-direction: column;
 }
 
-#boton-reinicia{
-    width: 323px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 60px;
-    border-color: rgb(200, 65, 4);
-    border-width: 6px;
-    color: beige;
-    font-family: cursive;
-    font-size: 30px;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 30px;
-    font-family: "Nabla", system-ui;
-    font-variation-settings: "EDPT" 100, "EHLT" 12; 
-}
-
-#resultado{
-    padding: 0px;
-    margin: 0px;
-}
-
-.juego-en-proceso{
+.juego-en-proceso {
     display: grid;
     grid-template-columns: 100px 100px;
     grid-gap: 40px;
     font-family: "Jersey 10", sans-serif;
     font-size: 30px;
     color: rgb(253, 253, 253);
-
 }
 
-#ver-mapa{
+#ver-mapa {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
-
 
 #mapa {
     border: 3px solid rgb(252, 84, 18);
     border-radius: 40px;
+    margin-top: 10px;
 }
 
-#ver-mapa button{
-    width: 79px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 60px;
-    border-color: rgb(200, 65, 4);
-    border-width: 6px;
-    color: beige;
-    font-family: cursive;
-    font-size: 30px;
-    padding: 10px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-family: "Nabla", system-ui;
-    font-variation-settings: "EDPT" 100, "EHLT" 12;
-}
-
-.boton-arriba{
-    margin: 0;
-}
-
-.botones-movimiento{
+.botones-movimiento {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-
-
-.titulo-central-mapa{
+.titulo-central-mapa {
     color: rgb(85, 38, 71);
-    text-decoration-color:#ffbb066b;
+    text-decoration-color: #ffbb066b;
     text-decoration-style: dotted;
     margin: 20px;
     font-size: 40px;
@@ -248,44 +158,45 @@ div{
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-variation-settings:
-    "EDPT" 100,
-    "EHLT" 12;
+    font-variation-settings: "EDPT" 100, "EHLT" 12;
     margin: 2px;
-} 
+}
 
-
-.ataquesJugador, .ataquesEnemigo{
+.ataquesJugador,
+.ataquesEnemigo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-@media (max-width: 720px){
-    .tarjeta_mokepon, .listaOrganizada{
+@media (max-width: 720px) {
+    .tarjeta_mokepon,
+    .listaOrganizada {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 115px;
         height: 399px;
     }
-    .titulo-central, .subtitulo{
+
+    .titulo-central,
+    .subtitulo {
         font-size: 50px;
     }
 
-    .tarjeta_mokepon{
-        padding: 0px;
-        font-size: 30px; color: rgb(252, 84, 18);
+    .tarjeta_mokepon {
+        padding: 0;
+        font-size: 30px;
+        color: rgb(252, 84, 18);
     }
 
-    .tarjeta_mokepon img{
+    .tarjeta_mokepon img {
         width: 65px;
         border-radius: 20px;
-        
     }
 
-    .claseBotonMascota{
+    .claseBotonMascota,
+    #boton-reinicia {
         width: 300px;
         height: 50px;
         border-width: 5px;
@@ -294,12 +205,7 @@ div{
         margin: 10px;
     }
 
-    #selec_mascota{
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    #selec_mascota {
+        height: auto;
     }
-    
 }
