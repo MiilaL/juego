@@ -236,17 +236,17 @@ function secuenciaAtaque(){
     botones.forEach((boton) => {
         boton.addEventListener("click", (e)=> {
             console.log(e)
-            if (e.target.textContent === " 🔥 ") {
+            if (e.target.id === "boton-fuego") {
                 ataqueJugador.push("FUEGO")
                 console.log(ataqueJugador)
                 boton.style.background = "transparent"
                 boton.disabled = true
-            } else if (e.target.textContent === " 💧 "){
+            } else if (e.target.id === "boton-agua"){
                 ataqueJugador.push("AGUA")
                 console.log(ataqueJugador)
                 boton.style.background = "transparent"
                 boton.disabled = true
-            } else {
+            } else if (e.target.id === "boton-tierra") {
                 ataqueJugador.push("TIERRA")
                 console.log(ataqueJugador)
                 boton.style.background = "transparent"
