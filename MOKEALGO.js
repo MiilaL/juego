@@ -187,9 +187,6 @@ function iniciarJuego (){
 }
 
 function seleccionarMascotaJugador () {
-    sectionSeleccionarMascota.style.display ="none"
-
-
     if (inputAcuarius.checked){
         spanMascotaJugador.innerHTML = inputAcuarius.id
         mascotaDelJugador = inputAcuarius.id
@@ -205,7 +202,8 @@ function seleccionarMascotaJugador () {
         alert("selecciona uno")
         return
     }
-
+    
+sectionSeleccionarMascota.style.display ="none"
 extraerAtaques(mascotaDelJugador)
 
 sectionVerMapa.style.display = "flex"
