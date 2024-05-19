@@ -202,7 +202,9 @@ function seleccionarMascotaJugador () {
         spanMascotaJugador.innerHTML = inputLeox.id
         mascotaDelJugador = inputLeox.id
     }else {
-        alert("selecciona uno")}
+        alert("selecciona uno")
+        return
+    }
 
 extraerAtaques(mascotaDelJugador)
 
