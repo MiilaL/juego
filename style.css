@@ -277,13 +277,15 @@ div{
     .tarjeta_mokepon{
         padding: 0px;
         font-size: 30px; color: rgb(252, 84, 18);
+        width: 200px; 
+        height: 250px; 
+    }
+
     }
 
     .tarjeta_mokepon img{
         width: 65px;
         border-radius: 20px;
-  
-        
     }
 
     .claseBotonMascota{
