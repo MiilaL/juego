@@ -268,7 +268,7 @@ div{
         align-items: center;
         justify-content: center;
         width: 115px;
-        height: 399px;
+        height: 200px;
     }
     .titulo-central, .subtitulo{
         font-size: 50px;
@@ -276,7 +276,7 @@ div{
 
     .tarjeta_mokepon{
         padding: 0px;
-        font-size: 10px; color: rgb(252, 84, 18);
+        font-size: 30px; color: rgb(252, 84, 18);
     }
 
     .tarjeta_mokepon img{
