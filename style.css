@@ -261,3 +261,31 @@ div{
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .titulo-central, .titulo-central-mapa {
+        font-size: 2.5rem;
+    }
+    .subtitulo {
+        font-size: 1.5rem;
+    }
+    .tarjeta_mokepon {
+        width: 90%;
+        max-width: 250px;
+    }
+    .claseBotonMascota, #boton-reinicia {
+        max-width: 400px;
+        font-size: 1.2rem;
+    }
+    .boton-ataque {
+        width: 100px;
+        height: 80px;
+        font-size: 1.2rem;
+    }
+    #mensajes {
+        font-size: 1.8rem;
+    }
+    #mapa {
+        max-width: 80%;
+    }
+}
+
