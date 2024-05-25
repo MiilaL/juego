@@ -275,6 +275,13 @@ div{
         width: 115px;
         height: 399px;
     }
+    .listaOrganizada{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 115px;
+        height: 399px;
+    }
 
 
 
