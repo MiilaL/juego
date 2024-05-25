@@ -301,12 +301,12 @@ div{
             align-items: center;
             justify-content: center;
     }
-    .tarjeta_mokepon, .listaOrganizada{
+    .tarjeta_mokepon,{
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 115px;
-        height: 399px;
+        height: 880px;
     }
 }
 
