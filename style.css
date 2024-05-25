@@ -271,23 +271,14 @@ div{
         height: 399px;
     }
 
-    body .titulo-central {
-  color: rgb(85, 38, 71);
-  /* other styles */
-}
-
-body .subtitulo {
-  color: rgb(209, 120, 85);
-  /* other styles */
-}
-    
-.titulo-central {
-  font-family: "Nabla", system-ui;
-  font-weight: 700; /* Use the 700 weight for the title */
-  font-style: normal;
-  font-variation-settings: "EDPT" 100, "EHLT" 12;
-  font-size: 90px;
-}
+    .titulo-central{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0px;
+    color: rgb(209, 120, 85);
+    }
 
 .claseBotonMascota {
   font-family: "Nabla", system-ui;
