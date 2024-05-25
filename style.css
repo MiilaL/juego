@@ -262,6 +262,14 @@ div{
 }
 
 @media screen and (max-width: 768px) {
+    /* Flexbox para que los elementos se vean verticalmente */
+    body, #selec_mascota, .tarjeta_mokepon, .claseBotonMascota, #seleccionar-ataque, #mensajes, #mapa, #ver-mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustes adicionales según sea necesario */
     .titulo-central, .titulo-central-mapa {
         font-size: 2.5rem;
     }
@@ -269,7 +277,6 @@ div{
         font-size: 1.5rem;
     }
     .tarjeta_mokepon {
-        width: 90%;
         max-width: 250px;
     }
     .claseBotonMascota, #boton-reinicia {
