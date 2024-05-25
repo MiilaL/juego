@@ -242,7 +242,6 @@ div{
     color: rgb(85, 38, 71);
     text-decoration-color:#ffbb066b;
     text-decoration-style: dotted;
-    margin: 20px;
     font-size: 40px;
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
@@ -251,7 +250,8 @@ div{
     font-variation-settings:
     "EDPT" 100,
     "EHLT" 12;
-    margin: 2px;
+    text-decoration:underline;
+    margin: 05px;
 } 
 
 
@@ -273,6 +273,15 @@ div{
     
     .titulo-central, .subtitulo{
         font-size: 50px;
+        font-family: "Nabla", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+        "EDPT" 100,
+        "EHLT" 12;
+        font-size: 90px;
+}
     }
 
     .tarjeta_mokepon{
