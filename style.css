@@ -270,6 +270,16 @@ div{
         width: 115px;
         height: 399px;
     }
+
+    body .titulo-central {
+  color: rgb(85, 38, 71);
+  /* other styles */
+}
+
+body .subtitulo {
+  color: rgb(209, 120, 85);
+  /* other styles */
+}
     
 .titulo-central {
   font-family: "Nabla", system-ui;
