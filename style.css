@@ -273,7 +273,6 @@ div{
     
     .titulo-central, .subtitulo{
         font-size: 50px;
-        font-family: 'Nabla', Helvetica, Arial, sans-serif;
     }
 
     .tarjeta_mokepon{
@@ -284,7 +283,7 @@ div{
     }
 
     .tarjeta_mokepon img{
-        width: 80px;
+        width: 800px;
         border-radius: 20px;
     }
 
