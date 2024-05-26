@@ -5,10 +5,11 @@ body{
     background-color: black;
 }
 
-.botones-pc{
-    display: none;
+.botones-movimiento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
 .titulo-central{
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
@@ -270,6 +271,11 @@ div{
         font-size: 30px; color: rgb(252, 84, 18);
         width: 120px; 
         height: 200px; 
+    }
+    .botones-movimiento {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .tarjeta_mokepon{
         flex-direction: column;
