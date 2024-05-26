@@ -282,13 +282,13 @@ div{
     font-variation-settings:
     "EDPT" 100,
     "EHLT" 12;
-    font-size: 20px;
+    font-size: 40px;
 }
     .subtitulo{
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 40px;
     margin: 0px;
     color: rgb(209, 120, 85);
     }
