@@ -13,12 +13,14 @@
         </head>
         <body>
             <section id = "selec_mascota">
+                <div id="contenedorTarjetas" class="listaOrganizada">
                     <h1 id="titulo" class="titulo-central">RATIXPON!!</h1>
                     <h2 class="subtitulo">Elige tu mascota:</h2>
-                    <div id="contenedorTarjetas" class="listaOrganizada">
-                    </div>
-                
-                <button class="claseBotonMascota" id="boton-mascota">seleccionar</button> 
+                </div>
+
+                <div class="claseBotonMascota" id="boton-mascota">
+                <button>seleccionar</button> 
+                </div>
             </section>
 
             <section id="ver-mapa">
@@ -26,21 +28,19 @@
                 <canvas id="mapa"></canvas>
                 <button class="boton-arriba" ontouchend="detenerMovimiento()" ontouchstart="moverArriba()">⇧</button>
                 
-            <div class="botones-movimiento">
-                <button ontouchend="detenerMovimiento()" ontouchstart="moverIzquierda()">⇦</button>
-            <button ontouchend="detenerMovimiento()" ontouchstart="moverAbajo()">⇩</button>
-            <button ontouchend="detenerMovimiento()" ontouchstart="moverDerecha()">⇨</button>
-</div>
-
+                <div class="botones-movimiento">
+                    <button ontouchend="detenerMovimiento()" ontouchstart="moverIzquierda()">⇦</button>
+                    <button ontouchend="detenerMovimiento()" ontouchstart="moverAbajo()">⇩</button>
+                    <button ontouchend="detenerMovimiento()" ontouchstart="moverDerecha()">⇨</button>
                 </div>
             </section>
 
 
-            <section id ="seleccionar-ataque">
-                <h1 id="titulo" class="titulo-central">RATIXALGO!!</h1> 
-                <h2 class="subtitulo">Elige tu Atak</h2>
-
-                <div id="contenedorAtaques"></div>
+        <section id ="seleccionar-ataque">
+                <div id="contenedorAtaques">
+                    <h1 id="titulo" class="titulo-central">RATIXALGO!!</h1> 
+                    <h2 class="subtitulo">Elige tu Atak</h2>
+               </div>
 
                 <div id = "mensajes"> 
                     <p id="resultado">¡Te deseo Suerte!</p>
@@ -49,19 +49,19 @@
                     </section>
                 </div>
 
-            <div class="juego-en-proceso">
-                <div class="ataquesJugador">
-                    <p id="vidas-jugador" style="color: firebrick;">0</p>
-                    <p id="mascota-jugador"></p>
-                    <div id="ataques-del-jugador"></div>
-                </div>
+                <div class="juego-en-proceso">
+                    <div class="ataquesJugador">
+                        <p id="vidas-jugador" style="color: firebrick;">0</p>
+                        <p id="mascota-jugador"></p>
+                        <div id="ataques-del-jugador"></div>
+                    </div>
                 
-                <div class="ataquesEnemigo">
-                    <p id="vidas-enemigo" style="color: blueviolet;">0</p>
-                    <p id="mascota-enemigo"></p>
-                    <div id="ataques-del-enemigo"></div>
-                </div>
-            </div>    
+                    <div class="ataquesEnemigo">
+                        <p id="vidas-enemigo" style="color: blueviolet;">0</p>
+                        <p id="mascota-enemigo"></p>
+                        <div id="ataques-del-enemigo"></div>
+                    </div>
+                </div>    
             </section>
             <script src="./MOKEALGO.js"></script>
         </body>
