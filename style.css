@@ -274,15 +274,15 @@ div{
         height: 399px;
     }
 
-    .titulo-central{
-    font-family: "Jersey 10", sans-serif;
+.titulo-central{
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
-    margin: 0px;
-    color: rgb(209, 120, 85);
-    }
-    
+    font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
     .subtitulo{
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
