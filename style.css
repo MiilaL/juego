@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); /*este es cuando abri github por primera vez hoy*/
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 body{
@@ -260,7 +260,6 @@ div{
     flex-direction: column;
     align-items: center;
 }
-
 @media screen and (max-width: 768px) {
    .tarjeta_mokepon{
         padding: 0px;
