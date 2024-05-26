@@ -275,7 +275,7 @@ div{
         height: 399px;
     }
 
-h1{
+.titulo-central{
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
