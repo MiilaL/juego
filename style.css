@@ -5,6 +5,10 @@ body{
     background-color: black;
 }
 
+.botones-pc{
+    display: none;
+}
+
 .titulo-central{
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
