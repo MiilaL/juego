@@ -20,18 +20,16 @@
             <section id="ver-mapa">
                 <h1 id="titulo-canvas" class="titulo-central-mapa">Ven a recorrer el mapa conmigo</h1>
                 <canvas id="mapa"></canvas>
-                <button class="boton-arriba" ontouchstart ontouchend onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⇧</button>
-                <button class="boton-arriba"  ontouchend="detenerMovimiento()" ontouchstart="moverArriba()">⇧</button>
+                 <button class="boton-movimiento" ontouchstart="moverArriba()" ontouchend="detenerMovimiento()" onmousedown="moverArriba()" onmouseup="detenerMovimiento()">⇧</button>
                 <div class="botones-movimiento">
                   
-                    <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⇦</button>
-                    <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">⇩</button>
-                    <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">⇨</button>
-                    
 
-                    <button ontouchend="detenerMovimiento()" ontouchstart="moverIzquierda()">⇦</button>
-                    <button ontouchend="detenerMovimiento()" ontouchstart="moverAbajo()">⇩</button>
-                    <button ontouchend="detenerMovimiento()" ontouchstart="moverDerecha()">⇨</button>
+   
+    <button class="boton-movimiento" ontouchstart="moverIzquierda()" ontouchend="detenerMovimiento()" onmousedown="moverIzquierda()" onmouseup="detenerMovimiento()">⇦</button>
+    <button class="boton-movimiento" ontouchstart="moverAbajo()" ontouchend="detenerMovimiento()" onmousedown="moverAbajo()" onmouseup="detenerMovimiento()">⇩</button>
+    <button class="boton-movimiento" ontouchstart="moverDerecha()" ontouchend="detenerMovimiento()" onmousedown="moverDerecha()" onmouseup="detenerMovimiento()">⇨</button>
+
+
                 </div>
             </section>
 
