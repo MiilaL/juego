@@ -4,31 +4,28 @@
             <meta charset="utf-8"/>
             <title>MOKEALGO</title>
             <link rel="stylesheet" href="./style.css"> 
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-        /* Inline style to ensure title color */
-        h1.titulo-central {
-            color: white !important;
-        }
-    </style>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
             <section id = "selec_mascota">
-                <div id="contenedorTarjetas" class="listaOrganizada">
                     <h1 id="titulo" class="titulo-central">RATIXPON!!</h1>
                     <h2 class="subtitulo">Elige tu mascota:</h2>
-                </div>
-
-                <div>
+                    <div id="contenedorTarjetas" class="listaOrganizada">
+                    </div>
+                
                 <button class="claseBotonMascota" id="boton-mascota">seleccionar</button> 
-                </div>
             </section>
 
             <section id="ver-mapa">
                 <h1 id="titulo-canvas" class="titulo-central-mapa">Ven a recorrer el mapa conmigo</h1>
                 <canvas id="mapa"></canvas>
-                <button class="boton-arriba" ontouchend="detenerMovimiento()" ontouchstart="moverArriba()">⇧</button>
-                
+                <button class="boton-arriba" ontouchstart ontouchend onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⇧</button>
+                <button class="boton-arribacel"  ontouchend="detenerMovimiento()" ontouchstart="moverArriba()">⇧</button>
                 <div class="botones-movimiento">
+                    <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⇦</button>
+                    <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">⇩</button>
+                    <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">⇨</button>
+
                     <button ontouchend="detenerMovimiento()" ontouchstart="moverIzquierda()">⇦</button>
                     <button ontouchend="detenerMovimiento()" ontouchstart="moverAbajo()">⇩</button>
                     <button ontouchend="detenerMovimiento()" ontouchstart="moverDerecha()">⇨</button>
@@ -36,11 +33,11 @@
             </section>
 
 
-        <section id ="seleccionar-ataque">
-                <div id="contenedorAtaques">
-                    <h1 id="titulo" class="titulo-central">RATIXALGO!!</h1> 
-                    <h2 class="subtitulo">Elige tu Atak</h2>
-               </div>
+            <section id ="seleccionar-ataque">
+                <h1 id="titulo" class="titulo-central">RATIXALGO!!</h1> 
+                <h2 class="subtitulo">Elige tu Atak</h2>
+
+                <div id="contenedorAtaques"></div>
 
                 <div id = "mensajes"> 
                     <p id="resultado">¡Te deseo Suerte!</p>
@@ -49,19 +46,19 @@
                     </section>
                 </div>
 
-                <div class="juego-en-proceso">
-                    <div class="ataquesJugador">
-                        <p id="vidas-jugador" style="color: firebrick;">0</p>
-                        <p id="mascota-jugador"></p>
-                        <div id="ataques-del-jugador"></div>
-                    </div>
+            <div class="juego-en-proceso">
+                <div class="ataquesJugador">
+                    <p id="vidas-jugador" style="color: firebrick;">0</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
                 
-                    <div class="ataquesEnemigo">
-                        <p id="vidas-enemigo" style="color: blueviolet;">0</p>
-                        <p id="mascota-enemigo"></p>
-                        <div id="ataques-del-enemigo"></div>
-                    </div>
-                </div>    
+                <div class="ataquesEnemigo">
+                    <p id="vidas-enemigo" style="color: blueviolet;">0</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>    
             </section>
             <script src="./MOKEALGO.js"></script>
         </body>
