@@ -30,7 +30,7 @@ body{
 }
 
 #selec_mascota{
-    height: 720px;
+    height: 600px;
     display: flex;
     flex-direction: column;
         align-items: center;
