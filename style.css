@@ -257,7 +257,15 @@ div{
     text-decoration:underline;
     margin: 05px;
 } 
-
+.parrafo-mapa{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    color: white;
+}
 
 .ataquesJugador, .ataquesEnemigo{
     display: flex;
