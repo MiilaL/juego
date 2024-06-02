@@ -266,6 +266,25 @@ div{
     unicode-bidi: isolate;
     color: white;
 }
+.parrafo-ataque-inicio{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    color: white;
+}
+
+.parrafo-ataque-final{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    color: white;
+}
 
 .ataquesJugador, .ataquesEnemigo{
     display: flex;
