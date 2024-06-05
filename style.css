@@ -55,7 +55,6 @@ label{
     height: 100px;
     background-color: rgb(184, 233, 106);
     border-radius: 23px;
-    
 }
 
 .tarjeta_mokepon{
@@ -346,6 +345,16 @@ div{
     }
     
 }
+
+@media only screen and (max-width: 375px) {
+    /* Estilos para dispositivos móviles como el iPhone */
+    /* Por ejemplo, ajustar el tamaño de fuente o el diseño de los elementos */
+    .titulo-central {
+        font-size: 40px;
+    }
+    .subtitulo, .subtitulo-2 {
+        font-size: 20px;
+    }
 
 
 
